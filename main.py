@@ -8,7 +8,7 @@ def get_url():
     return url
 
 def get_image_url():
-    allowed_extension = ['png','jpg']
+    allowed_extension = ['jpg','jpeg','png']
     file_extension = ''
     while file_extension not in allowed_extension:
         url = get_url()
