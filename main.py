@@ -13,7 +13,6 @@ def get_image_url():
     while file_extension not in allowed_extension:
         url = get_url()
         file_extension = re.search("([^.]*)$",url).group(1).lower()
-        print(file_extension)
     return url
 
 def bop(bot, update):
@@ -22,7 +21,7 @@ def bop(bot, update):
     bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('704418931:AAEtcZ7gsapkxzBliCOR9AsgR7f8N_AVQHA')
+    updater = Updater('YOUR_TOKEN')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop',bop))
     updater.start_polling()
