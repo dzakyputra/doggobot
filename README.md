@@ -2,6 +2,8 @@
 
 Read the full tutorial in my [medium](https://medium.freecodecamp.org/learn-to-build-your-first-bot-in-telegram-with-python-4c99526765e4).
 
+Check the bot in [here](http://telegram.me/picdoggobot).
+
 This bot will send you a random dog image when you type `/bop` command.
 
 ### Requirements
