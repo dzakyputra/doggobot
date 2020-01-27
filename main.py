@@ -1,4 +1,5 @@
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler
+from telegram.ext.dispatcher import run_async
 import requests
 import re
 
@@ -15,13 +16,14 @@ def get_image_url():
         file_extension = re.search("([^.]*)$",url).group(1).lower()
     return url
 
+@run_async
 def bop(update, context):
     url = get_image_url()
     chat_id = update.message.chat_id
     context.bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
-    updater = Updater('704418931:AAEtcZ7gsapkxzBliCOR9AsgR7f8N_AVQHA', use_context=True)
+    updater = Updater('YOUR_TOKEN', use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop',bop))
     updater.start_polling()
