@@ -1,6 +1,6 @@
 # doggobot
 
-Read the full tutorial in my [medium](https://medium.freecodecamp.org/learn-to-build-your-first-bot-in-telegram-with-python-4c99526765e4).
+Read the full tutorial in my [medium](https://medium.com/free-code-camp/learn-to-build-your-first-bot-in-telegram-with-python-4c99526765e4?source=friends_link&sk=b3681100973dda5ee1a98c93e240c994).
 
 Check the bot in [here](http://telegram.me/picdoggobot).
 
